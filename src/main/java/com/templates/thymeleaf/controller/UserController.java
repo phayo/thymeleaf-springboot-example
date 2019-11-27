@@ -11,7 +11,7 @@ public class UserController {
 
     @RequestMapping("demo")
     public String demo(Model model) {
-        double grade = 96.5;
+        double grade = 90.5;
         model.addAttribute("message", "Hello Ebuka");
         model.addAttribute("grade", grade);
         model.addAttribute("GPA", convertGPA(grade));
