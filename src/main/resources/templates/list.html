@@ -1,0 +1,19 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<title>Student List</title>
+<meta charset="utf-8" />
+<body>
+<h3>Student Grade Table</h3>
+<table>
+    <tr>
+        <th>Student ID</th>
+        <th>Student Name</th>
+        <th>Grade</th>
+    </tr>
+    <tr th:each="student : ${list}">
+        <td th:text="${student.id}"></td>
+        <td th:text="${student.studentName}"></td>
+        <td th:text="${student.grade}"></td>
+    <tr>
+</table>
+</body>
+</html>
